@@ -21,32 +21,34 @@ if __name__ == '__main__':
     colors = ('red', 'blue', 'green', 'yellow', 'orange')
     
     # Make a new turtle
-    
+    shriya=turtle.Turtle()
     # Make the turtle shape 'turtle', .shape('turtle')
-    
+    shriya.shape('turtle')
     # Set the turtle speed to max (0)
-    
+    shriya.speed(0)
     # Set the turtle width to 1
-    
+    shriya.width(1)
     # Create a variable to hold the number of sides in a pentagon
-    
+    sides=5
     # Create a variable to be the angle of 360 divided by the sides variable
-    
+    angle=360/sides
     # Use a for loop to repeat ALL the following lines of code 360 times. 
-        
+    for i in range(360):
         # If the loop variable (i) is equal to 100, set the turtle width to 2
-        
+        if(i==100):
+           shriya.width(2)
         # If the loop variable (i) is equal to 200, set the turtle width to 3
-        
+        if(i==200):
+            shriya.width(3)
         # Use the get_next_color function to set the turtle pencolor,
         # *hint .pencolor(get_next_color(i))
-        
+        shriya.pencolor(get_next_color(i))
         # Move the turtle forward by the loop variable, *hint .forward(i)
-        
+        shriya.forward(i)
         # Turn the turtle to the right by the angle variable + 1
-
+        shriya.right(360/5+1)
     # Hide your turtle so you can see the pattern.
-        
+    shriya.hideturtle()
     # Check the pattern against the picture in the recipe. If it matches, you are done!
     
     # Variations:
