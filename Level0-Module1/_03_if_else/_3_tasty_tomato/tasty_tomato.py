@@ -11,7 +11,7 @@ canvas.grid()
 
 # 1. Ask the user what color tomato they would like and save their response
 #    You can give them up to three choices
-
+radius = simpledialog.askinteger(title='tomato', prompt='what color would you like your tomato to be? purple, blue, or pink')
 
 # 2. Use if-else statements to draw the tomato in the color that they chose
 #    You can modify the code below or draw your own tomato
