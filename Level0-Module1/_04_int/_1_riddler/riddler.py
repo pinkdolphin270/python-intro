@@ -11,3 +11,5 @@
 * After all the riddles have been asked, tell the user how many they got
   correct
 """
+riddle = messagebox.showinfo(title='riddle', message='answer these three riddles.' )
+riddle = simpledialog.askstring(title='riddle', prompt='')
